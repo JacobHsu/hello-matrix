@@ -163,7 +163,7 @@ function createStreams() {
 
 function reset() {
 	streams = [];
-	//createStreams();
+	createStreams();
 }
 
 function setup() {
@@ -178,7 +178,7 @@ function setup() {
 }
 
 function draw() {
-	//background(0, 0.4);
+	background(0, 0.4);
 	streams.forEach((s) => s.draw());
 }
 
