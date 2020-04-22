@@ -167,7 +167,8 @@ function reset() {
 }
 
 function setup() {
-	createCanvas(innerWidth, innerHeight);
+	var canvas = createCanvas(innerWidth, innerHeight);
+	canvas.parent('container')
 	reset();
 	frameRate(20);
 	colorMode(HSB);
